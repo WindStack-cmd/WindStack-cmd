@@ -82,9 +82,13 @@ I enjoy working with data, learning new algorithms, and building practical proje
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=WindStack-cmd&show_icons=true&theme=midnight-purple&hide_border=true&include_all_commits=true&title_color=00D4FF&icon_color=00D4FF&text_color=ffffff&bg_color=0D1117" height="180"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WindStack-cmd&theme=github_dark" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=WindStack-cmd&theme=github_dark" height="180"/>
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WindStack-cmd&layout=compact&hide_border=true&title_color=00D4FF&text_color=ffffff&bg_color=0D1117" height="180"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=WindStack-cmd&theme=github_dark" height="180"/>
 </p>
 
 <p align="center">
