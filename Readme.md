@@ -97,10 +97,30 @@ I enjoy working with data, learning new algorithms, and building practical proje
 
 ---
 
-## 🏆 GitHub Trophies
+## 🏅 Achievements
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=WindStack-cmd&theme=algolia&no-frame=true&no-bg=true&margin-w=6&row=1&column=6" width="100%"/>
+  <img src="https://img.shields.io/badge/🎯%20DSA-Problem%20Solver-0077B6?style=for-the-badge"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/🤖%20ML-Model%20Builder-00D4FF?style=for-the-badge"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/📊%20Data-Explorer-0096C7?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🐍%20Python-Practitioner-3776AB?style=for-the-badge"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/📓%20Jupyter-Notebook%20Ninja-FA0F00?style=for-the-badge"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/🚀%20Open%20Source-Contributor-181717?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🧠%20Lifelong-Learner-023E8A?style=for-the-badge"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/📈%20Stats%20&%20EDA-Enthusiast-48CAE4?style=for-the-badge"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/💡%20Project-Builder-F7931E?style=for-the-badge"/>
 </p>
 
 ---
