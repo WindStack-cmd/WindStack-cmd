@@ -100,6 +100,8 @@ I enjoy working with data, learning new algorithms, and building practical proje
   <img alt="Snake animation" 
     src="https://raw.githubusercontent.com/WindStack-cmd/WindStack-cmd/output/github-contribution-grid-snake.svg"/>
 </picture>
+
+
 ## 📊 GitHub Stats
 
 <p align="center">
