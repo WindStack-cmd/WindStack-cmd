@@ -1,7 +1,12 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,30,0&height=220&section=header&text=Pratik%20Yadav&fontSize=65&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Aspiring%20Data%20Scientist%20%7C%20Python%20%7C%20Machine%20Learning&descAlignY=56&descSize=18&descColor=fff" width="100%"/>
 </p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0da1985a-e647-4da0-b593-5cbb42a82864" width="800"/>
+</p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code...
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=24&pause=1000&color=00D4FF&center=true&vCenter=true&width=650&lines=Hi+there!+I'm+Pratik+Yadav+%F0%9F%91%8B;Aspiring+Data+Scientist+%F0%9F%93%8A;Python+%7C+ML+%7C+DSA+Enthusiast+%F0%9F%A4%96;Always+learning+something+new+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
