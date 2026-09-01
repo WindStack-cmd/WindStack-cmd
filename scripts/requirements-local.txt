@@ -1,0 +1,4 @@
+# Optional local image-processing dependencies. Install manually only when needed.
+pillow>=10
+numpy>=1.26
+opencv-python>=4.8
