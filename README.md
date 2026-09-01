@@ -45,5 +45,5 @@ Building AI and data-driven projects that turn useful ideas into practical, inte
 
 ### pratik@github ~ $ connect
 
-`LinkedIn` - https://www.linkedin.com/in/pratik-yadav-718a63364?utm_source=share_via&utm_content=profile&utm_medium=member_android<br>
+`LinkedIn` - https://www.linkedin.com/in/pratik-yadav-718a63364/<br>
 `Email` - pratikyadav0104@gmail.com
