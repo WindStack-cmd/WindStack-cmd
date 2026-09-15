@@ -44,4 +44,4 @@ Edit the `PROFILE` dictionary near the top of `scripts/make_info_card.py`, then 
 
 ## Automation
 
-The GitHub Action runs daily and manually on demand. It installs only `scripts/requirements.txt`, fetches the public calendar without credentials, regenerates the heatmap, and commits changed graph files. It does not process portraits. If GitHub changes its calendar HTML or a network request fails, the job stops instead of fabricating data.
+The GitHub Action runs daily and manually on demand. It installs only `scripts/requirements.txt`, fetches the public calendar without credentials, regenerates the heatmap, refreshes its README cache key, and commits changed graph files. It does not process portraits. If GitHub changes its calendar HTML or a network request fails, the job stops instead of fabricating data.

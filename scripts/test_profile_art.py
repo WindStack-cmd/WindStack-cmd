@@ -1,6 +1,8 @@
 """Lightweight integrity checks for generated profile assets."""
 from __future__ import annotations
+import hashlib
 import json, sys
+import re
 from pathlib import Path
 from xml.etree import ElementTree as ET
 from bs4 import BeautifulSoup
@@ -34,6 +36,9 @@ def main():
         external = text.replace('xmlns="http://www.w3.org/2000/svg"', "")
         if "<script" in text.lower() or "http://" in external or "https://" in external: return fail(f"Unsafe external/script dependency in {path}")
         if path not in readme: return fail(f"README does not reference {path}")
+    heatmap_key=hashlib.sha256((ROOT/"assets/contrib-heatmap.svg").read_bytes()).hexdigest()[:12]
+    if not re.search(rf'src="./assets/contrib-heatmap\.svg\?v={heatmap_key}"', readme):
+        return fail("README heatmap reference does not match the generated SVG cache key")
     contribution=ROOT/"data/contributions.json"
     if contribution.is_file():
         try: payload=json.loads(contribution.read_text(encoding="utf-8")); assert isinstance(payload["days"],list); assert all({"date","count","level"} <= set(day) for day in payload["days"])
