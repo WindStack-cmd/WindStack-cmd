@@ -27,6 +27,14 @@ def main():
     try: test_contribution_cell_parser()
     except AssertionError: return fail("Contribution-cell parser did not read representative accessible count text")
     readme=(ROOT/"README.md").read_text(encoding="utf-8")
+    if any(marker in readme for marker in ("<<<<<<<", "=======", ">>>>>>>")):
+        return fail("README contains merge conflict markers")
+    whoami_marker="pratik@github ~ $ whoami"
+    contributions_marker="pratik@github ~ $ ./contributions.sh"
+    if readme.count(whoami_marker) != 1 or readme.count(contributions_marker) != 1:
+        return fail("README must contain exactly one whoami and contributions section")
+    if readme.index(whoami_marker) > readme.index(contributions_marker):
+        return fail("README whoami section must appear before contributions section")
     for path in ("assets/contrib-heatmap.svg","assets/windstack-ascii.svg","assets/info-card.svg"):
         asset=ROOT/path
         if not asset.is_file(): return fail(f"Missing {path}")
@@ -37,11 +45,19 @@ def main():
         if "<script" in text.lower() or "http://" in external or "https://" in external: return fail(f"Unsafe external/script dependency in {path}")
         if path not in readme: return fail(f"README does not reference {path}")
     heatmap_key=hashlib.sha256((ROOT/"assets/contrib-heatmap.svg").read_bytes()).hexdigest()[:12]
-    if not re.search(rf'src="./assets/contrib-heatmap\.svg\?v={heatmap_key}"', readme):
+    heatmap_references=re.findall(r'src="(\./assets/contrib-heatmap\.svg(?:\?v=[^"]*)?)"', readme)
+    if len(heatmap_references) != 1:
+        return fail("README must contain exactly one heatmap image reference")
+    if heatmap_references[0] != f"./assets/contrib-heatmap.svg?v={heatmap_key}":
         return fail("README heatmap reference does not match the generated SVG cache key")
     contribution=ROOT/"data/contributions.json"
     if contribution.is_file():
-        try: payload=json.loads(contribution.read_text(encoding="utf-8")); assert isinstance(payload["days"],list); assert all({"date","count","level"} <= set(day) for day in payload["days"])
+        try:
+            payload=json.loads(contribution.read_text(encoding="utf-8"))
+            assert isinstance(payload["days"],list)
+            assert all({"date","count","level"} <= set(day) for day in payload["days"])
+            total=payload["statistics"]["total_contributions"]
+            assert f"{total} contributions" in (ROOT/"assets/contrib-heatmap.svg").read_text(encoding="utf-8")
         except (json.JSONDecodeError,KeyError,AssertionError) as error: return fail(f"Invalid contributions JSON: {error}")
     print("PASS: profile-art assets and references are valid."); return 0
 if __name__ == "__main__": raise SystemExit(main())
