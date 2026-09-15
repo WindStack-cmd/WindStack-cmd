@@ -1,11 +1,5 @@
 <div align="center">
 
-<h3>pratik@github ~ $ ./contributions.sh</h3>
-
-<img src="./assets/contrib-heatmap.svg" alt="Animated GitHub contribution heatmap" width="860" />
-
-<br><br>
-
 <h3>pratik@github ~ $ whoami</h3>
 
 <table>
@@ -20,6 +14,12 @@
 </table>
 
 <sub>Turning data, code, and curiosity into intelligent systems.</sub>
+
+<br><br>
+
+<h3>pratik@github ~ $ ./contributions.sh</h3>
+
+<img src="./assets/contrib-heatmap.svg" alt="Animated GitHub contribution heatmap" width="860" />
 
 </div>
 
