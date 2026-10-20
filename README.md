@@ -19,7 +19,7 @@
 
 <h3>pratik@github ~ $ ./contributions.sh</h3>
 
-<img src="./assets/contrib-heatmap.svg?v=4736bc33ba10" alt="Animated GitHub contribution heatmap" width="860" />
+<img src="./assets/contrib-heatmap.svg?v=d7ecc189cff1" alt="Animated GitHub contribution heatmap" width="860" />
 
 </div>
 
